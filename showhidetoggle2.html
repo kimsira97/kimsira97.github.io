@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('img').click(function(){
+          $('img').hide("fast");
+          $('#gallery').css('background-color','yellow');
+        });
+        $('#gallery2').click(function(){
+          $('img').show("fast");
+        });
+      });
+    </script>
     <style>
       #gallery{
         width: 340px;
@@ -18,16 +29,6 @@
             padding: 0 5%;
         }
     </style>
-      $(document).ready(function(){
-        $('img').click(function(){
-          $('img').hide("fast");
-          $('#gallery').css('background-color','yellow');
-        });
-        $('#gallery2').click(function(){
-          $('img').show("fast");
-        });
-      });
-    </script>
   </head>
   <body>
     <div class="box">
