@@ -1,0 +1,137 @@
+*{text-decoration: none; list-style: none; color: black;}
+.header{
+    height: 150px;
+}
+.header > h1{
+    width: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header > h1 img{
+    max-width: 100%;
+    height: auto;
+}
+.nav > div{
+    width: 900px;
+    margin: 0 auto 0 auto;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav > div li{
+    width: 19%;
+    padding: 10px 20px;
+    text-align: center;
+    float: left;
+}
+.nav > div li a:hover{
+    color: red;
+}
+
+.contents{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+
+/* 탭메뉴 상단 */
+.product-section {
+    position: relative;
+    z-index: 10;    
+}
+.product-section .tabmenu {
+    line-height: 60px;
+    position: relative;
+    z-index: 10;
+    margin-top: 30px;
+    height: 90px;
+}
+.product-section .tabmenu > .inner {
+    margin: auto;
+    width: 100%;
+}
+
+/* 탭 */
+.product-section .tabs-nav {
+    display: inline-block; 
+}
+.product-section .tabs-nav li {
+    width: 188px;
+    float: left;
+    position: relative;
+    margin: 2px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+.product-section .tabs-nav a {
+    display: block;
+    position: relative;
+}
+.product-section .tabs-nav a:hover,
+.product-section .tabs-nav a.active {
+    background-color: rgb(59, 36, 23);
+    color: rgb(255, 255, 255);
+}
+.product-section .tabs-nav a.active:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 37px;
+    height: 19px;
+    margin-left: -18px;
+}
+
+
+/* 탭메뉴 상단 하단 */
+.product-section .section-body {
+    position: relative;
+}
+
+.product-section .section-body ul li{
+    display: inline-block;
+    margin-right: 45px;
+    margin-bottom: 50px;
+    
+}
+.product-section .section-body ul li:nth-child(4n){
+    margin-right: 0px;
+}
+.product-section .section-body ul li a{
+    display: block;
+}
+.product-section .section-body ul li p{
+    text-align: center;
+    padding: 2% 0;
+    cursor: pointer;
+}
+.product-section .section-body ul li img{
+    width: 200px;
+    border: 1px solid #d3d3d3;
+}
+
+.number{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+}
+.number .number_page a{
+    float: left;
+    padding: 10px 20px 10px 20px;
+    background-color: #f7f7f7;
+}
+.number_page a:hover{
+    color: white;
+    background-color: #333333;
+}
+
+
+
+footer{
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+
+
