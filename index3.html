@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="css/index3.css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script type="text/javascript">
+          function filter(){
+
+        var value, name, item, i;
+
+        value = document.getElementById("value").value.toUpperCase();
+        item = document.getElementsByClassName("item");
+
+        for(i=0;i<item.length;i++){
+          name = item[i].getElementsByClassName("name");
+          if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+            item[i].style.display = "flex";
+          }else{
+            item[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+     <script>
+      $(document).ready(function(){
+        $('.name').click(function(){
+          $('.imgbox').show("fast");
+        });
+        $('.imgbox').click(function(){
+          $('.imgbox').hide("fast");
+        });
+//        $('.name').click(function(){
+//          $('.imgbox').toggle("fast");
+//        });
+      });
+     </script>
+      </head>
+      <body>
+        <div class="header">
+            <h1><a href="index.html"><img src="img/logo2.png"></a></h1>
+            <div class="nav">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index2.html">Menu</a></li>
+                        <li><a href="index3.html">store</a></li>
+                        <li><a href="index4.html">news</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="search">
+            <div class="searchbox">
+              <div class="header2">
+                <h1>Search</h1>
+                <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="item">
+                  <span class="icon">ㄱ</span>
+                  <span class="name">메가커피 강남점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㄱ</span>
+                  <span class="name">메가커피 개봉점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㄱ</span>
+                  <span class="name">메가커피 구로점</span>
+                </div>
+                
+                <div class="item">
+                  <span class="icon">ㅁ</span>
+                  <span class="name">메가커피 망원점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅅ</span>
+                  <span class="name">메가커피 신도림점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅅ</span>
+                  <span class="name">메가커피 신림점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅅ</span>
+                  <span class="name">메가커피 서초점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅈ</span>
+                  <span class="name">메가커피 잠실점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅈ</span>
+                  <span class="name">메가커피 중랑점</span>
+                </div>
+                <div class="item">
+                  <span class="icon">ㅎ</span>
+                  <span class="name">메가커피 홍대점</span>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="imgbox">
+                    <img src="img/map.png">
+                </div>
+            </div>
+            </div>
+          </div>
+        <footer>
+          <!-- Copyright (c) 2019 dongyangUni <br>
+          서울시 구로동 111-11번지 동양대학교 학생회관ㅇㅇ <br>
+          mmm@naver.com -->
+        </footer>
+
+      </body>
+    </html>
