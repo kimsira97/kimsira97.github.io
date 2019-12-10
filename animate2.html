@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      button{
+        width: 100px;
+        height: 30px;
+        border: 1px solid red;
+      }
+      img{
+        border: 2px solid red;
+      }
+        .box{
+            padding: 0% 5%;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btn1').click(function(){
+          $('#dog').animate({marginLeft:"+=300px"}, "slow");
+          $('#dog').animate({marginLeft:"-=300px"}, "slow");
+        });
+        $('#btn2').click(function(){
+          $('img').animate({height:"toggle"}, "slow");
+        });
+      });
+    </script>
+  </head>
+  <body class="box">
+    <h1>animate_이동1</h1>
+    <img src="img/dog.png" id="dog" width="400" height="250"><br>
+    <b>한국의 겨울</b><br>
+    <button id="btn1">좌우이동</button>
+    <button id="btn2">이미지 토글</button>
+  </body>
+</html>

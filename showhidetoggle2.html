@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #gallery{
+        width: 340px;
+        border: 2px solid red;
+        border-radius: 10px;
+      }
+      #gallery figure{
+        margin: 10px 20px;
+        color: red;
+      }
+        .box{
+            padding: 0 5%;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('img').click(function(){
+          $('img').hide("fast");
+          $('#gallery').css('background-color','yellow');
+        });
+        $('#gallery2').click(function(){
+          $('img').show("fast");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="box">
+        <h1>ShowHideToggle2</h1>
+        <div id="gallery">
+          <figure>
+            <img src="img/dog3.png" width="300" height="200">
+            <figcaption id="gallery2"><b>한국의 봄</b>
+              화사하게 피어난 분홍 매화꽃</figcaption>
+            </figure>
+        </div>
+    </div>
+  </body>
+</html>
